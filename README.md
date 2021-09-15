@@ -1,2 +1,2 @@
-# Python-Learning
-This is content I've created when learning python. They are basically my practice files and helpme mark my progress.
+# Python-Projects
+These are projects I developed as a method to help me boost my progress and understanding of python.

@@ -1,0 +1,42 @@
+HOW TO commit CHANGES AND PUSH THEM TO GITHUB REPOSITORY
+source : https://www.codegrepper.com/code-examples/shell/vs+code+push+to+github 
+
+OPTION 1
+
+git add .
+git commit -m "message for the commit"
+git remote add origin https://url-of-github-repo
+git push origin master
+
+OPTION 2
+
+git init                                                           // start tracking current directory
+git add -A                                                         // add all files in current directory to staging area, making them available for commit
+git commit -m "commit message"                                     // commit your changes
+git remote add origin https://github.com/username/repo-name.git    // add remote repository URL which contains the required details
+git pull origin master                                             // always pull from remote before pushing
+git push -u origin master                                          // publish changes to your remote repository
+
+
+OPTION 3
+
+git init                                                           // start tracking current directory
+git add -A                                                         // add all files in current directory to staging area, making them available for commit
+git commit -m "commit message"                                     // commit your changes
+git remote add origin https://github.com/username/repo-name.git    // add remote repository URL which contains the required details
+git pull origin master                                             // always pull from remote before pushing
+git push -u origin master  
+
+
+OPTION 4
+
+We make a change in one branch, and we want carry that change to another branch. In order two merge two branches,
+we need to
+1. Switch to the branch where we want to take the changes to. git checkout master(recently changed to main)
+2. Run the merge command by mentioning the branch name where the changes are. git merge develop 
+    Takes the changes from develop and merges into my current branch (master)
+    git branch -d <branch_name> deletes the branch.
+    If we have unmerged changes, this command gives a warning and does not delete.
+    git branch -D <branch_name> deletes the branch even if it has unmerged changes. Gives no warning.
+    git push --set-upstream origin <branch_name> it creates a new branch with given name in the remote and pushes the
+    changes from local branch to the new branch.

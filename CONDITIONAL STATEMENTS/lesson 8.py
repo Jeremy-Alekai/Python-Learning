@@ -1,6 +1,9 @@
 
 #LESSON 8 : Comparison Operators 
 
+# source about string concatenation ://pythonguides.com/concatenate-strings-in-python/
+
+
 # Previously, we used the == and != operators to check if two values are equal. 
 # When we check for equality, we compare one value to another to determine if they are equal. 
 # For this reason, we call == and != comparison operators.
